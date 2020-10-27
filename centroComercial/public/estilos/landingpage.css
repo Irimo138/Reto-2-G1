@@ -1,0 +1,116 @@
+@font-face{
+	font-family: Quicksand;
+  	src: url(fuente/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Quicksand;
+}
+header{
+	background: radial-gradient(circle, rgba(32,255,249,1) 0%, rgba(5,144,255,1) 100%);
+	text-align: center;
+	padding: 5%;
+	box-shadow: 5px 5px 5px grey;
+}
+/* Navegacion entre tiendas */
+ul.slider{
+    position:relative;
+}
+ul.slider li{
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+ul.slider li:first-child{
+    opacity: 1;
+}
+/* Target de los ID para cambiar las imagenes */
+ul.slider li:target{
+    opacity: 1;
+}
+ul, li{
+    box-sizing: border-box;
+}
+.slider li{
+    width: 100vw;
+    height: 70vh;
+    text-align: center;
+}
+#slide1{
+    background-color: rgb(189, 194, 201);
+}
+#slide2{
+    background-color: rgb(189, 194, 201);
+    color: #00324b;
+}
+#slide3{
+    background-color: rgb(189, 194, 201);
+    color: #00324b;
+}
+#slide4{
+    background-color: rgb(189, 194, 201);
+    color: #65bce8;
+}
+#slide5{
+    background-color: rgb(189, 194, 201);
+    color: #00324b;
+}
+nav{
+    width: 100vw;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: lightgrey;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    box-sizing: border:box;
+}
+nav a{
+    font-size: 2vw;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.8;
+    flex-grow: 1;
+    text-align: center;
+    border-top: 5px solid rgb(77, 191, 232);
+    flex-wrap: wrap;
+    position: relative;
+    color: black;
+}
+nav li:last-child a{
+    border-right: 0;
+}
+nav a:hover{
+    background-color: rgb(77,191,232);
+    color: black;
+    border-top-color: rgb(77,191,232);
+}
+nav a:active{
+    border-top-color: rgb(77, 191, 232);
+    background: dodgerblue;
+    color: white;
+}
+.imagenes{
+	width: 60vw;
+	height: 70vh;
+}
+@media only screen and (min-width: 200px) and (max-width: 699px){
+
+}
+@media only screen and (min-width: 700px) and (max-width: 999px){
+
+}
+@media only screen and (min-width: 1000px){
+}

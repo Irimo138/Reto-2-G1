@@ -1,0 +1,143 @@
+@font-face{
+	font-family: Quicksand;
+  	src: url(fuente/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Quicksand;
+}
+/* Panel de un lado para el editor */
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 135, 245);
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  box-shadow: 1.5px 0px 5px;
+}
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.BotonEditor{
+	font-size: 25px;
+	cursor:pointer;
+}
+.formulario{
+	padding-top: 15%;
+	padding-left: 15%;
+}
+/* Estilo general */
+header{
+	background: radial-gradient(circle, rgba(32,255,249,1) 0%, rgba(5,144,255,1) 100%);
+	text-align: center;
+	padding: 5%;
+	box-shadow: 0px 1.5px 5px grey;
+}
+body{
+	background-color: rgb(189, 194, 201);
+}
+article{
+	background-color: rgb(138, 138, 138);
+	border-radius: 7px;
+}
+img{
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px; 
+}
+.texto{
+	padding-left: 7%;
+	padding-right: 7%;
+	padding-bottom: 7%; 
+}
+
+/* Flex */
+.row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/* Media Query */
+@media only screen and (min-width: 200px) and (max-width: 699px){
+	article{
+		width: 90vw;
+		height: 90vw;
+		margin: 1vw;
+	}
+	img{
+		width: 100%;
+		height: 70%;
+	}
+	.texto{
+		padding-left: 7%;
+		padding-right: 7%;
+		padding-bottom: 7%; 
+	}
+	.sidenav{
+		padding-top: 15px;
+	}
+  	.sidenav p{
+  		font-size: 18px;
+  	}
+}
+@media only screen and (min-width: 700px) and (max-width: 999px){
+	article{
+		width: 45%;
+		height: 45%;
+		margin: 1vw;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.sidenav{
+		padding-top: 15px;
+	}
+  	.sidenav a{
+  		font-size: 18px;
+  	}
+}
+@media only screen and (min-width: 1000px){
+	h3{
+		font-size: 2vw;
+	}
+	p{
+		font-size: 1vw;
+	}
+	article{
+		width:30%;
+		height: 30%;
+		margin: 1vw;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+	}
+	.sidenav{
+		padding-top: 15px;
+	}
+    .sidenav a{
+    	font-size: 18px;
+    }
+}
