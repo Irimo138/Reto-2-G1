@@ -14,13 +14,12 @@ class Productos extends Migration
     public function up()
     {
         Schema::create('productos', function (Blueprint $table) {
-            $table->string('nombre');
+            $table->string('nombre')->primary();
             $table->string('descripcion');
             $table->integer('precio');
             $table->integer('stock');
-            $table->integer('codigo');
-            $table->string('codTienda');
-            
+            $table->integer('codigo')->unique();
+            //$table->foreign('codTienda')->references('codTienda')->on('tiendas');
         });
     }
 
