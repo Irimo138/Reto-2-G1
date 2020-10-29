@@ -68,9 +68,9 @@ img{
 .texto{
 	padding-left: 7%;
 	padding-right: 7%;
-	padding-bottom: 7%; 
+	padding-bottom: 7%;
+	text-align: justify; 
 }
-
 /* Flex */
 .row{
 	display: flex;

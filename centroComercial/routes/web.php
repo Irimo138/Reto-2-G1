@@ -15,11 +15,11 @@ use App\Http\Controllers\homeController;
 */
 
 
-Route::get('/', [homeController::class, 'home']);
-Route::get('centro', [centroController::class, 'index']);
+Route::get('/', [homeController::class, 'home'])->name('index');
+Route::get('centro', [centroController::class, 'index'])->name('index');
 
-Route::get('centro/zara', [centroController::class, 'zara']);
-Route::get('centro/pyb', [centroController::class, 'pyb']);
-Route::get('centro/macdonals', [centroController::class, 'macdonals']);
-Route::get('centro/nike', [centroController::class, 'nike']);
-Route::get('centro/adidas', [centroController::class, 'adidas']);
+Route::get('centro/zara', [centroController::class, 'zara'])->name('zara');
+Route::get('centro/pyb', [centroController::class, 'pyb'])->name('pyb');
+Route::get('centro/macdonals', [centroController::class, 'macdonals'])->name('macdonals');
+Route::get('centro/nike', [centroController::class, 'nike'])->name('nike');
+Route::get('centro/adidas', [centroController::class, 'adidas'])->name('adidas');

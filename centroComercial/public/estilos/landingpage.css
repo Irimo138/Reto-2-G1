@@ -16,6 +16,7 @@ header{
 /* Navegacion entre tiendas */
 ul.slider{
     position:relative;
+    list-style: none;
 }
 ul.slider li{
     opacity: 0;
@@ -34,30 +35,6 @@ ul.slider li:target{
 ul, li{
     box-sizing: border-box;
 }
-.slider li{
-    width: 100vw;
-    height: 70vh;
-    text-align: center;
-}
-#slide1{
-    background-color: rgb(189, 194, 201);
-}
-#slide2{
-    background-color: rgb(189, 194, 201);
-    color: #00324b;
-}
-#slide3{
-    background-color: rgb(189, 194, 201);
-    color: #00324b;
-}
-#slide4{
-    background-color: rgb(189, 194, 201);
-    color: #65bce8;
-}
-#slide5{
-    background-color: rgb(189, 194, 201);
-    color: #00324b;
-}
 nav{
     width: 100vw;
     position: absolute;
@@ -75,7 +52,7 @@ nav ul li{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    box-sizing: border:box;
+    box-sizing: border-box;
 }
 nav a{
     font-size: 2vw;
@@ -102,15 +79,53 @@ nav a:active{
     background: dodgerblue;
     color: white;
 }
-.imagenes{
-	width: 60vw;
-	height: 70vh;
+.enltitulo{
+	text-decoration: none;
+	color: black;
+}
+body{
+    background-color: rgb(189, 194, 201);
+}
+aside{
+    padding: 30px;
+}
+tr{
+    text-align: left;
+}
+th{
+    width: 120px;
+;
 }
 @media only screen and (min-width: 200px) and (max-width: 699px){
-
+	.slider li{
+    	width: 100vw;
+    	height: 70vh;
+    	text-align: center;
+	}
+	#imagenes{
+        width: 60%;
+        height: 100%;
+    }
 }
 @media only screen and (min-width: 700px) and (max-width: 999px){
-
+	.slider li{
+    	width: 100vw;
+    	height: 40vh;
+    	text-align: center;
+	}
+	#imagenes{
+        width: 60%;
+        height: 100%;
+    }
 }
 @media only screen and (min-width: 1000px){
+	.slider li{
+    	width: 100vw;
+    	height: 70vh;
+    	text-align: center;
+	}
+	#imagenes{
+        width: 60%;
+        height: 100%;
+    }
 }
